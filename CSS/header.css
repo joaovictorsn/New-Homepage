@@ -1,18 +1,16 @@
 .header{
     display: flex;
     flex-direction: row;
-}
+    flex: auto;
 
-.header-buttons01{
-    flex: 50%;
 }
 
 .header-buttons {
-    flex: 1;
-    flex-wrap: wrap;
-    flex-grow: 100%;
+       justify-content: flex-end;
+       gap: 20px;
+       
 }
 
 .header-item{
-    flex-basis: auto;
+    
 }

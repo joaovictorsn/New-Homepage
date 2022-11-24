@@ -1,0 +1,14 @@
+.footer{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+}
+
+.footer-txt{
+    inline-size: 250px;
+    
+}
+
+.footer-descricao{
+    padding-left: 15px;
+}
