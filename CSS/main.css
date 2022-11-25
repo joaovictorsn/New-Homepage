@@ -1,7 +1,124 @@
+.main::after
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: auto;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.main-block-01{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.main-block-01-txt{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    padding-top: 35px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-txt{
+    inline-size: 350px;
+    padding-bottom: 10px;
+    flex: 100%;
+}
+
+.main-txt-h1{
+    font-size: 100px;
+    inline-size: 600px;
+}
+
+.main-block-02{
+    display: flex;
+    flex-direction: column;
+    flex: 33%;
+    background-color: rgb(16, 6, 27);
+    color: #fff;
+
+}
+
+.main-block-02-content{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    flex: 33%;
+
+}
+
+.main-block-02-content-detail{
+    border-bottom-style: groove;
+    border-bottom-width: thin;
+    border-color: rgba(147, 147, 192, 0.63);
+}
+
+.main-block-02-color01{
+    color: coral;
+    font-size:55px;
+    padding-bottom: 35px;
+}
+
+.main-block-02-color02{
+    color: #fff;
+    font-size:20px;
+    padding-bottom: 35px;
+}
+
+.main-block-02-color03{
+    color: #fff;
+    font-size:15px;
+}
+
+@media only screen and (max-width:768px) {
+    .main
+    {
+        flex-direction: column;
+        margin-bottom: 50px;
+
+    }
+    .main-block-01-txt
+    {
+        flex-direction: column;
+    }
+    .main-txt-h1{
+        font-size: 70px;
+        inline-size: 450px;
+    }
+
+    .image-main{
+        src: url(../assets/images/image-web-3-mobile.jpg);
+    }
+
+}
+
+.footer::after
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+
 .footer{
     display: flex;
     flex-direction: row;   
     justify-content: space-between;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;  
 }
 
 .footer-txt{
@@ -12,3 +129,25 @@
 .footer-descricao{
     padding-left: 15px;
 }
+
+.image-footer{
+    height: 120px;
+}
+
+@media only screen and (max-width:768px) {
+    .footer
+    {
+        flex-direction: column;
+
+    }
+
+    .image-footer{
+        width: max-content;
+    }
+
+    .footer-content{
+        padding-bottom: 15px;
+    }
+    
+}
+

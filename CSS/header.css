@@ -1,7 +1,15 @@
+.header::after
+{
+    content: '';
+    clear: both;
+    display: table;
+}  
+
 .header{
     display: flex;
     flex-direction: row;
     flex: auto;
+    margin-bottom: 35px;
 
 }
 
@@ -11,6 +19,8 @@
        
 }
 
-.header-item{
+@media only screen (max-width:768px){
     
 }
+
+
