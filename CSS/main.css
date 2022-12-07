@@ -97,10 +97,6 @@
         inline-size: 450px;
     }
 
-    .image-main{
-        src: url(../assets/images/image-web-3-mobile.jpg);
-    }
-
 }
 
 .footer::after
